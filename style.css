@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root{
+    --cyan: hsl(179,62%,43%);
+    --lighterCyan:hsl(179,47%,52%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+    --white: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    background-color: var(--lightGray);
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #ffffff;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 640px;
+    display: grid;
+    box-shadow: 0px 10px 25px -8px rgba(46,74,117,0.56);
+    border-radius: 5px;
+}
+
+
+
+h1, h3{
+    margin:0
+}
+
+.intro{
+    background-color: var(--white);
+    margin: 0;
+    padding: 30px;
+}
+
+.intro h1{
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+.intro .green-text{
+    color: var(--brightYellow);
+    font-weight: 700;
+}
+
+.intro .grey-text{
+    color: var(--grayishBlue);
+    line-height: 26px;
+}
+
+
+.row{
+    display: flex;
+}
+
+
+.row > div{
+    flex: 1;
+}
+.col1{
+    background-color: var(--cyan);
+    padding: 35px;
+    color: white;
+}
+
+.col1 span{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.col1 .per-month{
+    color: hsl(182, 53%, 59%);
+}
+
+button{
+    border: none;
+    background-color: var(--brightYellow);
+    outline: none;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px -8px rgba(46,74,117,0.56);
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: hsl(81, 83%, 55%);;
+}
+
+.col2{
+    background-color: var(--lighterCyan);
+    padding: 35px;
+    color: white;
+}
+
+.col2 p{
+    line-height: 20px;
+}
+
+
+
+footer{
+    text-align: center;
+    color: var(--cyan);
+}
+
+footer a{
+    color: var(--brightYellow);
+}
+
+@media(max-width:375px){
+
+    body{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .intro h1{
+        font-size: 1.17em;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+
+}
